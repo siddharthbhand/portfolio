@@ -1,0 +1,349 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#111827;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    margin-top:60px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    width:60%;
+    margin:auto;
+    margin-bottom:25px;
+}
+
+button{
+    background:#38bdf8;
+    color:black;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.about{
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.about h2{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* Skills Section */
+
+.skills{
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.skills h2{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.skill-card{
+    background:#111827;
+    color:white;
+    padding:25px;
+    width:220px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    border:2px solid #38bdf8;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    background:#38bdf8;
+    color:black;
+}
+
+/* Projects Section */
+
+.projects{
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.projects h2{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.project-card{
+    background:#111827;
+    width:320px;
+    padding:25px;
+    border-radius:10px;
+    border:2px solid #38bdf8;
+    transition:0.3s;
+}
+
+.project-card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+/* Certificates Section */
+
+.certificates{
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.certificates h2{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.certificate-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.certificate-card{
+    background:#111827;
+    width:350px;
+    padding:25px;
+    border-radius:10px;
+    border:2px solid #38bdf8;
+    transition:0.3s;
+}
+
+.certificate-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+}
+/* Contact Section */
+
+.contact{
+    width:80%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.contact h2{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.contact-btn{
+    background:#38bdf8;
+    color:black;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+footer p{
+    color:white;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:14px;
+}
+
+   .logo{
+    font-size:18px;
+        margin-bottom:10px;
+    }
+
+    .profile-img{
+        width:160px;
+        height:160px;
+    }
+
+.hero h1{
+    font-size:20px;
+    line-height:1.4;
+}
+
+    .hero h2{
+        font-size:18px;
+    }
+
+    .hero p{
+        width:90%;
+        font-size:16px;
+    }
+
+    .about{
+        width:90%;
+    }
+
+    .about h2{
+        font-size:30px;
+    }
+
+    .about p{
+        font-size:16px;
+    }
+
+    .skills{
+        width:90%;
+    }
+
+    .skill-card{
+        width:100%;
+    }
+
+    .projects{
+        width:90%;
+    }
+
+    .project-card{
+        width:100%;
+    }
+
+    .certificates{
+        width:90%;
+    }
+
+    .certificate-card{
+        width:100%;
+    }
+
+    .contact{
+        width:90%;
+    }
+
+    .contact-links{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact-btn{
+        width:220px;
+        text-align:center;
+    }
+}
